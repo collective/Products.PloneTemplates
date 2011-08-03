@@ -1,10 +1,5 @@
-##########################################################################
-# PloneTemplates
-# (C) 2007, 2008, ZOPYX Ltd & Co. KG, Tuebingen, Germany
-##########################################################################
-
 import os
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 CLASSIFIERS = [
@@ -32,7 +27,7 @@ setup(name='Products.PloneTemplates',
       maintainer_email='danny.bloemendaal@informaat.nl',
       classifiers=CLASSIFIERS,
       keywords='Zope Plone Templates', 
-      url='http://pypi.python.org/pypi/PloneTemplates',
+      url='http://pypi.python.org/pypi/Products.PloneTemplates',
       description='Content templates for Plone',
       long_description=long_description,
       packages=['Products', 'Products.PloneTemplates'],
