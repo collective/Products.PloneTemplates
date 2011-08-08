@@ -8,7 +8,7 @@ CLASSIFIERS = [
     'Framework :: Plone',
 ]
 
-version = '1.0.2'
+version = '1.0.3'
 
 readme_file= os.path.join('Products', 'PloneTemplates', 'readme.txt')
 desc = open(readme_file).read().strip()
