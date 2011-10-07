@@ -1,4 +1,3 @@
-import os
 from setuptools import setup
 
 
@@ -10,9 +9,9 @@ CLASSIFIERS = [
 
 version = '1.0.3'
 
-readme_file= os.path.join('Products', 'PloneTemplates', 'readme.txt')
+readme_file = 'README.txt'
 desc = open(readme_file).read().strip()
-changes_file = os.path.join('Products', 'PloneTemplates', 'releasenotes.txt')
+changes_file = 'CHANGES.txt'
 changes = open(changes_file).read().strip()
 
 long_description = desc + '\n\nCHANGES\n=======\n\n' +  changes 
