@@ -5,7 +5,9 @@
 
 <body>
 
-<div metal:fill-slot="main" tal:define="templates python:here.PloneTemplates_tool.getTemplates(here)">
+<div metal:fill-slot="main" 
+	tal:define="templates python:here.PloneTemplates_tool.getTemplates(here);
+	normalizeString nocall:context/@@plone/normalizeString;">
 
     <h1>Available templates</h1>
 
