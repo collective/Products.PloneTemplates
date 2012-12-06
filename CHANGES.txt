@@ -5,6 +5,8 @@ Changelog
 ------------------
 - Define normalizeString to template_overview template.
   [arterrey]
+- Fixed the quickAdd form in template_overview template.
+  [arterrey]
 
 1.0.3 (2011-10-07)
 ------------------

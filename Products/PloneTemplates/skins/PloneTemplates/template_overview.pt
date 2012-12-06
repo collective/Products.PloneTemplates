@@ -17,11 +17,9 @@
 
 	<tal:listing tal:repeat="objTemplate templates"> 
 	   <div class="field">
-		   <form name="quickAdd" action="instantiate_template" method="post">
-			   <img src="folder.gif" 
-					alt="" 
-					tal:attributes="src string:$portal_url/${objTemplate/getAutoIcon};"/>
-			   <label tal:attributes="for python:normalizeString(objTemplate.getId());">
+		   <form name="quickAdd" action="instantiateTemplate" method="post">
+			   <label tal:attributes="for python:normalizeString(objTemplate.getId());
+			   	                      class python:normalizeString('contenttype-%s' % objTemplate.getAutoIconType())">
 				   <span tal:content="objTemplate/title_or_id" />
 			   </label>
 				<div style="padding-left:1.5em;">
