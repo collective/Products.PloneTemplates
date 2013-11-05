@@ -1,7 +1,14 @@
 from Acquisition import aq_inner
 from zope.component import getMultiAdapter
-from zope.app.publisher.browser.menu import BrowserMenu
-from zope.app.publisher.browser.menu import BrowserSubMenuItem
+try:
+    # Plone < 4.3
+    from zope.app.publisher.browser.menu import BrowserMenu
+    from zope.app.publisher.browser.menu import BrowserSubMenuItem
+except ImportError:
+    # Plone >= 4.3
+    # zope.app.publisher Refactor package, spliting it to several new packages
+    from zope.browsermenu.menu import BrowserMenu
+    from zope.browsermenu.menu import BrowserSubMenuItem
 from Products.CMFCore.utils import getToolByName
 from Products.PloneTemplates import MessageFactory as _
 from plone.memoize.instance import memoize
