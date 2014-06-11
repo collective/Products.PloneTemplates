@@ -3,8 +3,17 @@ Changelog
 
 1.0.4 (unreleased)
 ------------------
+
+- Remove the related items macro in template_view. Related items are now
+  rendered using a viewlet in plone.belowcontentbody.
+  [jcerjak]
+
+- Fix 4.3 compatibility.
+  [djay]
+
 - Define normalizeString to template_overview template.
   [arterrey]
+
 - Fixed the quickAdd form in template_overview template.
   [arterrey]
 
@@ -37,10 +46,10 @@ Changelog
 
 1.0.0b4 (2009/05/15)
 --------------------
- 
+
 * fixed packaging issue
 
 1.0.0b3 (2009/05/04)
 --------------------
- 
+
 * eggified (ajung)
